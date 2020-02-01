@@ -41,6 +41,10 @@
       </nav>
       <div class="page-header__search search">
         <a class="search__link" href="#">Поиск</a>
+        <div class="search__form">
+          <input class="search__input" type="search" name="search" value="search">
+          <label class="visually-hidden" for="search">Поиск</label>
+        </div>
       </div>
       <div class="page-header__user user">
         <a class="user__link" href="#">Вход</a>
@@ -50,7 +54,7 @@
       </div>
       <div class="page-header__contacts">
         <p class="page-header__contacts-day">С 10 до 20, ежедневно</p>
-        <a class="page-header__contacts-phone" href="tel:"8 812 450-25-25>8 812 450-25-25</a>
+        <a class="page-header__contacts-phone" href="tel:88124502525">8 812 450-25-25</a>
       </div>
     </header>
 
@@ -71,17 +75,14 @@
         </ul>
         <ul class="promo-slider__slide-list">
           <li class="promo-slider__slide-item promo-slider__slide-item--active">
-            <img class="promo-slider__slide-image" src="img/slide-1.png" width="647" height="584" alt="Крем-брюле и пломбирс малиновым джемом">
             <p class="promo-slider__slide-title">Крем-брюле и пломбир с малиновым джемом</p>
             <a class="button promo-slider__slide-link" href="#">Давайте оба!</a>
           </li>
           <li class="promo-slider__slide-item">
-            <img class="promo-slider__slide-image" src="img/slide-1.png" width="647" height="584" alt="Шоколадный пломбири лимонный сорбет ">
             <p class="promo-slider__slide-title">Шоколадный пломбир и лимонный сорбет </p>
             <a class="button promo-slider__slide-link" href="#">Давайте оба!</a>
           </li>
           <li class="promo-slider__slide-item">
-            <img class="promo-slider__slide-image" src="img/slide-1.png" width="647" height="584" alt="Пломбир с помадкой и клубничный щербет">
             <p class="promo-slider__slide-title">Пломбир с помадкой и клубничный щербет</p>
             <a class="button promo-slider__slide-link" href="#">Давайте оба!</a>
           </li>
@@ -140,12 +141,14 @@
       </section>
       <section class="container about-us">
         <h2 class="visually-hidden">О магазине мороженого Gllacy Shop</h2>
-        <div class="about-us__inner">
-          <b class="about-us__title">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</b>
-          <p class="about-us__text">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-          <p class="about-us__text">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
-          <p class="about-us__text">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-          <p class="about-us__text">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+        <div class="about-us__wrapper">
+          <div class="about-us__inner">
+            <b class="about-us__title">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</b>
+            <p class="about-us__text">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+            <p class="about-us__text">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+            <p class="about-us__text">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+            <p class="about-us__text">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+          </div>
         </div>
       </section>
       <div class="container">
@@ -165,10 +168,10 @@
       <div class="map-container">
         <section class="contacts">
           <h2 class="visually-hidden">Контакты</h2>
-          <p class="contacts__text">Адрес главного офиса и <br>офлайн-магазина:</p>
+          <p class="contacts__text">Адрес главного офиса и офлайн-магазина:</p>
           <b class="contacts__bold-text">ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
           <p class="contacts__text">Для заказов по телефону:</p>
-          <a class="contacts__bold-text" href="tel:"8 812 450-25-25>8 812 450-25-25</a>
+          <a class="contacts__bold-text" href="tel:88124502525">8 812 450-25-25</a>
           <p class="contacts__text">(с 10 до 20 ежедневно)</p>
           <a class="button contacts__link" href="#">Форма обратной связи</a>
         </section>
