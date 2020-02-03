@@ -41,13 +41,21 @@
       </nav>
       <div class="page-header__search search">
         <a class="search__link" href="#">Поиск</a>
-        <div class="search__form">
-          <input class="search__input" type="search" name="search" value="search">
+        <form class="search__form" action="" method="post">
           <label class="visually-hidden" for="search">Поиск</label>
-        </div>
+          <input class="search__input" type="search" name="search" value="" placeholder="Крем-брюле" id="search">
+          <button class="visually-hidden" type="submit"></button>
+        </form>
       </div>
       <div class="page-header__user user">
         <a class="user__link" href="#">Вход</a>
+        <form class="user__form" action="" method="post">
+          <label class="visually-hidden" for="user-email">Электронная почта</label>
+          <input class="user__email" type="email" name="email" value="" placeholder="email@example.com" id="user-email">
+          <label class="visually-hidden" for="user-password">Поиск</label>
+          <input class="user__password" type="password" name="password" value="" placeholder="••••••••" id="user-password">
+          <button class="button user__button" type="submit">Войти</button>
+        </form>
       </div>
       <div class="page-header__cart cart">
         <a class="cart__link" href="#">Пусто</a>
@@ -142,8 +150,8 @@
       <section class="container about-us">
         <h2 class="visually-hidden">О магазине мороженого Gllacy Shop</h2>
         <div class="about-us__wrapper">
+        <b class="about-us__title">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</b>
           <div class="about-us__inner">
-            <b class="about-us__title">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</b>
             <p class="about-us__text">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
             <p class="about-us__text">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
             <p class="about-us__text">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
@@ -161,8 +169,11 @@
         <section class="mailing">
           <h2 class="visually-hidden">Сладкая рассылка</h2>
           <p class="mailing__text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-          <!-- Здесь будет форма -->
-          <button class="button mailing__button" type="button" name="button">Отправить</button>
+          <form class="mailing__form" action="" method="post">
+            <label class="visually-hidden" for="mailing">Почта</label>
+            <input class="mailing__input" type="email" name="mailing-form" value="" placeholder="email@example.com" id="mailing">
+            <button class="button mailing__button" type="submit">Отправить</button>
+          </form>
         </section>
       </div>
       <div class="map-container">
@@ -209,10 +220,31 @@
       </ul>
       <div class="page-footer__copyright copyright">
         <a class="copyright__image-link" href="https://htmlacademy.ru/intensive/htmlcss">
-          <img class="copyright__image" src="img/logo-htmlacademy-small.png" width="108" height="39" alt="HTML Academy">
+          <img class="copyright__image" src="img/logo-htmlacademy-small.svg" width="108" height="39" alt="HTML Academy">
         </a>
         <p class="copyright__text">Сделано в <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019</p>
       </div>
     </footer>
+
+    <section class="modal modal-write-us">
+      <form class="modal-write-us__form" action="" method="post">
+        <h2 class="visually-hidden">Форма обратной связи</h2>
+        <p class="modal-write-us__title">Мы обязательно вам ответим</p>
+        <p class="modal-write-us__container">
+          <label class="visually-hidden" for="name">Ваше имя</label>
+          <input class="modal-write-us__input" type="text" name="" value="">
+        </p>
+        <p class="modal-write-us__container">
+          <label class="visually-hidden" for="email">Ваш email</label>
+          <input class="modal-write-us__input" type="text" name="" value="">
+        </p>
+        <p class="modal-write-us__container">
+          <label class="visually-hidden" for="comment">Ваш комментарий</label>
+          <textarea class="modal-write-us__textarea" name="name" rows="8" cols="80"></textarea>
+        </p>
+        <button class="button modal-write-us__button" type="submit">Отправить</button>
+      </form>
+      <button class="visually-hidden modal-write-us__close-button" type="button">Закрыть</button>
+    </section>
   </body>
 </html>
