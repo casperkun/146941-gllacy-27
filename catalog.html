@@ -40,10 +40,10 @@
       </nav>
       <div class="page-header__search search">
         <a class="search__link" href="#">Поиск</a>
-        <form class="search__form" action="" method="post">
+        <form class="search__form" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="search">Поиск</label>
           <input class="search__input" type="search" name="search" value="" placeholder="Крем-брюле" id="search">
-          <button class="visually-hidden" type="submit"></button>
+          <button class="visually-hidden" type="submit">Поиск</button>
         </form>
       </div>
       <div class="page-header__user user">
@@ -58,6 +58,34 @@
       </div>
       <div class="page-header__cart cart">
         <a class="cart__link" href="#">Пусто</a>
+        <div class="cart__popup">
+          <table class=cart__table"">
+            <tr class="cart__row">
+              <td class="cart__column cart__column--1">
+                <button class="cart__delete-button" type="button">Закрыть</button>
+              </td>
+              <td class="cart__column cart__column--2">
+                <img class="cart__image" src="img/ice-cream-icon-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+              </td>
+              <td class="cart__column cart__column--3">Пломбир с апельсиновым джемом</td>
+              <td class="cart__column cart__column--4">1,5 кг x<span class="cart__light-text">200 руб,</span></td>
+              <td class="cart__column cart__column--5">300 руб</td>
+            </tr>
+            <tr class="cart__row">
+              <td class="cart__column cart__column--1">
+                <button class="cart__delete-button" type="button">Закрыть</button>
+              </td>
+              <td class="cart__column cart__column--2">
+                <img class="cart__image" src="img/ice-cream-icon-2.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+              </td>
+              <td class="cart__column cart__column--3">Клубничный пломбир с присыпкой из белого шоколада</td>
+              <td class="cart__column cart__column--4">1,5 кг x<span class="cart__light-text">300 руб,</span></td>
+              <td class="cart__column cart__column--5">450 руб</td>
+            </tr>
+          </table>
+          <p class="cart__price">Итого: 750 руб.</p>
+          <button class="button cart__button"type="button">Оформить заказ</button>
+        </div>
       </div>
       <div class="page-header__contacts">
         <p class="page-header__contacts-day">С 10 до 20, ежедневно</p>
@@ -78,7 +106,71 @@
         </li>
       </ul>
       <h1 class="main-title">Сливочное мороженое</h1>
-      <!-- Здесь будет форма -->
+      <section class="filter">
+        <h2 class="visually-hidden">Фильтр товаров</h2>
+        <form class="filter__form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="filter__fieldset">
+            <legend class="filter__legend">Сортировка:</legend>
+            <select class="filter__select" name="sorting">
+              <option class="filter__option">По популярности</option>
+              <option class="filter__option">Сначала недорогие</option>
+              <option class="filter__option">Сначала дорогие</option>
+              <option class="filter__option">По жирности</option>
+            </select>
+          </fieldset>
+          <fieldset class="filter__fieldset">
+            <legend class="filter__legend">Цена: 100 руб. - 500 руб.</legend>
+            <div class="filter__range"></div>
+          </fieldset>
+          <fieldset class="filter__fieldset">
+            <legend class="filter__legend">Жирность:</legend>
+            <ul class="filter__list">
+              <li class="filter__item">
+                <input class="visually-hidden" type="radio" name="fat" value="0%" id="radio-1">
+                <label class="filter__label filter__label--fat" for="radio-1">0%</label>
+              </li>
+              <li class="filter__item">
+                <input class="visually-hidden" type="radio" name="fat" value="до 10%" id="radio-2" checked>
+                <label class="filter__label filter__label--fat" for="radio-2">до 10%</label>
+              </li>
+              <li class="filter__item">
+                <input class="visually-hidden" type="radio" name="fat" value="до 30%" id="radio-3">
+                <label class="filter__label filter__label--fat" for="radio-3">до 30%</label>
+              </li>
+              <li class="filter__item">
+                <input class="visually-hidden" type="radio" name="fat" value="выше 30%" id="radio-4">
+                <label class="filter__label filter__label--fat" for="radio-4">выше 30%</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filter__fieldset">
+            <legend class="filter__legend">Наполнители:</legend>
+            <ul class="filter__list">
+              <li class="filter__item">
+                <input class="visually-hidden" type="checkbox" name="chocolate" id="chocolate" checked>
+                <label class="filter__label filter__label--filler" for="chocolate">Шоколадные</label>
+              </li>
+              <li class="filter__item">
+                <input class="visually-hidden" type="checkbox" name="sugar-powders" id="sugar-powders" checked>
+                <label class="filter__label filter__label--filler" for="sugar-powders">Сахарные присыпки</label>
+              </li>
+              <li class="filter__item">
+                <input class="visually-hidden" type="checkbox" name="fruit" id="fruit">
+                <label class="filter__label filter__label--filler" for="fruit">Фрукты</label>
+              </li>
+              <li class="filter__item">
+                <input class="visually-hidden" type="checkbox" name="syrup" id="syrup">
+                <label class="filter__label filter__label--filler" for="syrup">Сиропы</label>
+              </li>
+              <li class="filter__item">
+                <input class="visually-hidden" type="checkbox" name="jam" id="jam">
+                <label class="filter__label filter__label--filler" for="jam">Джемы</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="button filter__button" type="submit">Применить</button>
+        </form>
+      </section>
       <section class="container">
         <h2 class="visually-hidden">Найденные товары</h2>
         <ul class="product-list">
